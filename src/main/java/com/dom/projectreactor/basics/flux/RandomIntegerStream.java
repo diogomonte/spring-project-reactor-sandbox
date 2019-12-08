@@ -31,7 +31,6 @@ public class RandomIntegerStream {
 	public static Flux<String> numberToString(int origin, int bound) {
 		return createRandomInteger(origin, bound)
 				.doOnNext(n -> System.out.println("Next number: " + n))
-				.take(Duration.ofSeconds(5))
 				.map(String::valueOf);
 	}
 
