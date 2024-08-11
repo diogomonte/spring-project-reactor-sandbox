@@ -55,5 +55,5 @@ public class FluxStringSamplesTest {
 				.expectNext(3)
 				.verifyComplete();
 	}
-	
+
 }

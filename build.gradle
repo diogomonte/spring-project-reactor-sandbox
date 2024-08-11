@@ -5,14 +5,14 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 11
+sourceCompatibility = 17
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile 'io.projectreactor:reactor-core:3.3.1.RELEASE'
-    testCompile 'io.projectreactor:reactor-test:3.3.1.RELEASE'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'io.projectreactor:reactor-core:3.6.3'
+    testImplementation 'io.projectreactor:reactor-test:3.6.3'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 }
